@@ -1,0 +1,360 @@
+/* إعدادات عامة */
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    background: linear-gradient(135deg, #1c87c9, #8ecae6); /* خلفية متدرجة */
+    color: white; /* لون النص */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+/* تنسيق الشعار */
+header .logo {
+    width: 200px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+header .logo:hover {
+    transform: rotate(5deg) scale(1.1); /* تأثير دوران وتكبير */
+}
+
+/* تنسيق النص الترحيبي */
+.welcome-text {
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.438); /* ظل النص */
+}
+
+/* تنسيق الأزرار */
+.option-btn {
+    padding: 20px;
+    margin: 15px;
+    background-color: #1c87c9;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* تأثير عند التفاعل */
+}
+
+.option-btn:hover {
+    transform: scale(1.05); /* تكبير بسيط عند التمرير */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* زيادة الظل */
+}
+
+.option-btn i {
+    margin-right: 10px; /* مسافة بين الأيقونة والنص */
+    font-size: 18px; /* حجم الأيقونة */
+}
+
+/* تنسيق التذييل (footer) */
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+body {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+/* تنسيق عام للصفحة */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* تنسيق الحاوية الرئيسية لواجهة أولياء الأمور */
+.parent-interface {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff00;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق الشعار */
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+header .logo:hover {
+    transform: rotate(5deg) scale(1.1); /* تأثير الدوران والتكبير */
+}
+
+/* تنسيق النص العنوان */
+h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+/* تنسيق نص الترحيب */
+p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* تنسيق نموذج البحث */
+.search-form {
+    margin-top: 20px;
+}
+
+/* تنسيق مربع البحث */
+.search-form input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #3498db; /* لون الحدود */
+    border-radius: 8px; /* حواف دائرية */
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+/* تغيير اللون عند التمرير بالماوس */
+.search-form input[type="text"]:focus {
+    border-color: #2980b9; /* تغيير لون الحدود عند التركيز */
+}
+
+/* تنسيق زر البحث */
+.search-form button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+/* تغيير اللون عند التمرير بالماوس على الزر */
+.search-form button:hover {
+    background-color: #2980b9;
+}
+
+/* تعيين خلفية الصفحة */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* تنسيق الشعار */
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+header .logo:hover {
+    transform: rotate(5deg) scale(1.1); /* تأثير الدوران والتكبير */
+}
+
+/* الحاوية للخيارات */
+.choices {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* تنسيق الأزرار */
+.choice {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.choice:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.choice:active {
+    transform: scale(0.98);
+}
+.logo {
+    width: 150px;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.logo:hover {
+    box-shadow: 0 0 20px rgba(52, 152, 219, 0.8);
+}
+.choices {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(135deg,#3498db , #3498db);
+    color: rgba(255, 255, 255, 0.986);
+    text-decoration: none;
+    padding: 15px 20px;
+    width: 300px;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+
+.choice:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.choice span {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+/* العبارة الترحيبية */
+.welcome-message {
+    font-size: 24px;
+    color: #e3e6e9;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+/* العبارة التوجيهية */
+.instruction-message {
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+    font-style: italic;
+}
+header .logo {
+    width: 200px; /* حجم الشعار */
+    margin-bottom: 25px; /* مسافة تحت الشعار */
+    transition: transform 0.3s ease; /* تأثير الانتقال */
+}
+
+header .logo:hover {
+    transform: rotate(5deg) scale(1.1); /* تأثير الدوران والتكبير */
+}
+
+/* تنسيق واجهة الإداري */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    direction: rtl;
+    text-align: center;
+}
+
+.login-container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="password"] {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#fileList div {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.admin-interface {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+button img {
+    vertical-align: middle;
+    width: 24px;
+}

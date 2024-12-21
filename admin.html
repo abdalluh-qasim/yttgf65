@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>واجهة الإداري</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- نافذة إدخال الرمز السري -->
+    <div id="adminLogin" class="login-container">
+        <h2>الرجاء إدخال الرمز السري</h2>
+        <input type="password" id="adminCode" placeholder="أدخل الرمز السري">
+        <button onclick="validateCode()">تأكيد</button>
+        <p id="errorMessage" style="color: red; display: none;">الرمز خاطئ!</p>
+    </div>
+
+    <!-- واجهة الإداري بعد التحقق من الرمز -->
+    <div id="adminInterface" class="admin-interface" style="display: none;">
+        <h2>إدارة الملفات</h2>
+        <form id="uploadForm" action="upload.php" method="POST" enctype="multipart/form-data">
+            <input type="file" id="fileInput" name="files[]" accept=".pdf" multiple required>
+            <button type="submit">رفع الملفات</button>
+        </form>
+        <div id="fileList">
+            <!-- سيتم عرض الملفات هنا -->
+        </div>
+    </div>
+
+    <script>
+        const correctCode = "12345678";
+
+        // تحقق من الرمز السري
+        function validateCode() {
+            const inputCode = document.getElementById("adminCode").value;
+            if (inputCode === correctCode) {
+                document.getElementById("adminLogin").style.display = "none";
+                document.getElementById("adminInterface").style.display = "block";
+            } else {
+                document.getElementById("errorMessage").style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
